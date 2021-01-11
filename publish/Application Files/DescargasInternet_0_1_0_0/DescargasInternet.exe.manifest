@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DescargasInternet.exe" version="0.1.0.0" publicKeyToken="05a2b4a76ac07a85" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DescargasInternet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DescargasInternet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DescargasInternet.exe" size="33728">
+      <assemblyIdentity name="DescargasInternet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rBh/KeKObSN7CJZBTkRb5rkxbcovbiCELWwBlFDtVio=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DescargasInternet.exe.config" size="1166">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tz1iTbdfAwzMjaGzsRbr1ecVeFgSoQLqUah+iSO4n+A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="youtube-dl.exe" size="8113024">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cu0XfX5Zpvkd5txVTrN+TyqthlHnS1DM25kKL5dQwJM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CARLOS-PC\Carlos" issuerKeyHash="51c1391f9cfd69b50b2b0be4e86d6fafe4d4f191" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5ZaUv04E4qwflJZy9xmBVAcdqaW0//e89cleCNWHzxE=</DigestValue></Reference></SignedInfo><SignatureValue>G8MB+XoIf1b0reH3JepRsYsvbbaFoUcT6lBnjf7Qxmp6CQDwrs5Rhhukpy1Pl44f2xqyA58CFYoqlsYMZf6AVo2Ib7q9gG+f5kFn8vzPaE4wklDW/2Hz9T1JWvfJn6nLMOFviqUHNI7ntfej4LE9sdWz4X4Hy/jkQ/uIb8oRfYM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vEWdahdOfE9NGXZM7HdFoKXz9mx2de+zcuCqhZqx2jcA3EiMB76p7JLbbw+SUl/LJo3gYXN4DksE3osAy5ytw7piwN8HQhKvoq0KOV2gsd1TmeOU0lsyfxbG1fzKIKt8C7havnxpSCrU8BnyvSAdZjZJRIxnE6z5/u5WNV0RcUk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="11cf87d5085ec9f5bcf7ffb4a5a91d07548119f77296941face2044ebf9496e5" Description="" Url=""><as:assemblyIdentity name="DescargasInternet.exe" version="0.1.0.0" publicKeyToken="05a2b4a76ac07a85" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CARLOS-PC\Carlos</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bTfEB4fxZiqpJee4oxPREouWtPxQz06D+tnBD2nEq7I=</DigestValue></Reference></SignedInfo><SignatureValue>ML+mLFIoU4jR1lnWyzdREJ9OcfSLywotA360777UTr5+Iw021iRy84iOM3Rae9vQculFfxS8yz1vL4p50Fiw9ipUwb6JPmB5f2RcwHfnzEgOHM4TxzLbVGzd/ZRGajWykZTBOZdI0lHlV4xAQxAz9epmsPS0HyL517n3C1JrqX0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vEWdahdOfE9NGXZM7HdFoKXz9mx2de+zcuCqhZqx2jcA3EiMB76p7JLbbw+SUl/LJo3gYXN4DksE3osAy5ytw7piwN8HQhKvoq0KOV2gsd1TmeOU0lsyfxbG1fzKIKt8C7havnxpSCrU8BnyvSAdZjZJRIxnE6z5/u5WNV0RcUk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQYYWV/Rw0HJ1LpLsfXBh7HDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAQwBBAFIATABPAFMALQBQAEMAXABDAGEAcgBsAG8AczAeFw0yMTAxMDQyMDIwMDVaFw0yMjAxMDUwMjIwMDVaMCsxKTAnBgNVBAMeIABDAEEAUgBMAE8AUwAtAFAAQwBcAEMAYQByAGwAbwBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8RZ1qF058T00Zdkzsd0WgpfP2bHZ177Ny4KqFmrHaNwDcSIwHvqnskttvD5JSX8smjeBhc3gOSwTeiwDLnK3DumLA3wdCEq+irQo5XaCx3VOZ45TSWzJ/FsbV/Mogq3wLuFq+fGlIKtTwGfK9IB1mNklEjGcTrPn+7lY1XRFxSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAs05nTnoBEhf8i1JjMjWHycP5ubR7MQdcFOGztGdqmEdMl4UoJS6C4cYI5KyK/Z0tEjZ7BgKe94PVFUiqbkIeawvJwz67rzVYZjRan5jGlDtuVJcBvGZKbEueQTquPwHa2jbfGaPBS7qdfNdN3D+tFVEUyYN1zA4TcRexYf05Ir</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

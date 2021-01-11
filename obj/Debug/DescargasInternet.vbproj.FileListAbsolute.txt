@@ -1,0 +1,17 @@
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe.config
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.pdb
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.xml
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbprojAssemblyReference.cache
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.Resources.resources
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbproj.GenerateResource.cache
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbproj.CoreCompileInputs.cache
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.exe
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.xml
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.pdb
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.frmPrincDescargas.resources
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.VentanaOpciones.resources
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe.manifest
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.application
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.exe.manifest
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.application
