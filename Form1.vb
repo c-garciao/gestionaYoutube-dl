@@ -3,10 +3,11 @@
     Dim portapapeles, nombreCarpeta, rutaExes, redireccion
     Dim primeraEjec As Boolean
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = My.Resources.dw
         rutaExes = Environment.GetEnvironmentVariable("userprofile") & "\Documents\FicherosEsencialesDescargas"
         If My.Settings.rutaEjecutables <> "" Then
             If Not VentanaOpciones.compruebaDirectorioFichero(My.Settings.rutaEjecutables & "\youtube-dl.exe", "a") Or Not VentanaOpciones.compruebaDirectorioFichero(My.Settings.rutaEjecutables & "\ffmpeg.exe", "a") Then
-                If My.Settings.primeraEjecucion Then
+                If My.Settings.primeraEjecucion Or My.Settings.primeraEjecucion = True Then
                     Dim respuesta As DialogResult = MessageBox.Show("No se han descargado los ficheros necesarios" & vbCrLf & "¿Desea descargarlos?", "Descarga de ficheros necesarios", MessageBoxButtons.YesNo)
                     If respuesta = DialogResult.Yes Then
                         VentanaOpciones.descargaFicheros()
@@ -18,6 +19,9 @@
             Else
                 primeraEjec = False
             End If
+            rutaExes = My.Settings.rutaEjecutables
+        Else
+             My.Settings.rutaEjecutables = rutaExes
         End If
 
 
@@ -28,11 +32,11 @@
             matrizDatos01.Columns(i).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         Next
 
-        If My.Settings.rutaEjecutables = "" Then
-            My.Settings.rutaEjecutables = rutaExes
-        Else
-            rutaExes = My.Settings.rutaEjecutables
-        End If
+        '  If My.Settings.rutaEjecutables = "" Then
+        ' My.Settings.rutaEjecutables = rutaExes
+        ' Else
+        ' rutaExes = My.Settings.rutaEjecutables
+        ' End If
         'If My.Settings.youtubeExe Then 'Not nombreCarpeta Then
         '    If System.IO.Directory.Exists(My.Settings.youtubeExe) AndAlso System.IO.Directory.Exists(My.Settings.ffmpegExe) Then
         '    Else
@@ -81,15 +85,18 @@
         Dim numeroColumnas, numeroFilas As Integer
         Dim parametrosSeleccion, comando As String '= ""
         Dim valorCelda
-        If My.Settings.rutaDefectoDescargas = "" Then
-            nombreCarpeta = Environment.GetEnvironmentVariable("userprofile") & "\Desktop\DescargasYT"
-            My.Settings.rutaDefectoDescargas = nombreCarpeta
-            If (Not System.IO.Directory.Exists(nombreCarpeta)) Then
-                System.IO.Directory.CreateDirectory(nombreCarpeta)
+        If nombreCarpeta = "" Then
+            If My.Settings.rutaDefectoDescargas = "" Then
+                nombreCarpeta = Environment.GetEnvironmentVariable("userprofile") & "\Downloads"
+                My.Settings.rutaDefectoDescargas = nombreCarpeta
+                If (Not System.IO.Directory.Exists(nombreCarpeta)) Then
+                    System.IO.Directory.CreateDirectory(nombreCarpeta)
+                End If
+            Else
+                nombreCarpeta = My.Settings.rutaDefectoDescargas
             End If
-        Else
-            nombreCarpeta = My.Settings.rutaDefectoDescargas
         End If
+
         If opcSelecAudio.Checked Then
             parametrosSeleccion = "-x --audio-format mp3"
 
@@ -110,7 +117,7 @@
             numeroFilas = matrizDatos01.Rows.Count - 1
 
             If numeroFilas < 1 Then
-                muestraCuadroMensaje("Error. Celdas vacías", "Error", MessageBoxIcon.Error)
+                muestraCuadroMensaje("Error. No ha introducido ninúna url. No puede dejar las celdas vacías", "Error. No ha introducido datos", MessageBoxIcon.Error)
             Else
                 barraProgresoDescarga.Visible = True
                 barraProgresoDescarga.Maximum = numeroFilas
@@ -135,17 +142,22 @@
                         comando = comando & Chr(34) & valorCelda.Replace(vbLf, "") & Chr(34) & redireccion
                         'Process.Start("powershell.exe")
                         'Shell(comando)
+                        txtPrgresoDescarga.Text = j + 1 & "/" & numeroFilas
+                        Me.Text = "Progreso de descarga: " & j + 1 & " de " & numeroFilas
                         barraProgresoDescarga.Value = j + 1
                         descargaFichero(comando)
                     Next
                 Next
-                muestraCuadroMensaje("Se han descargado los archivos", "Descarga finalizada", MessageBoxIcon.Information)
+                'Me.ResetText()
+                Me.Text = "Descarga"
+                muestraCuadroMensaje("Se han descargado los archivos en " & vbCrLf & nombreCarpeta, "Descarga finalizada", MessageBoxIcon.Information)
             End If
         Catch ex As Exception
             'Console.WriteLine(comando)
             Console.WriteLine(ex)
             muestraCuadroMensaje("Error : " & vbCrLf & ex.Message, "Error en la descarga", MessageBoxIcon.Error)
         Finally
+            txtPrgresoDescarga.Text = ""
             Cursor = Cursors.Default
             matrizDatos01.Enabled = True
             btnDescarga.Enabled = True
@@ -214,6 +226,18 @@
         'ventanaOpciones = New Ve
         Dim vent = New VentanaOpciones()
         vent.Show()
+    End Sub
+
+    Private Sub ManualDeUsoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManualDeUsoToolStripMenuItem.Click
+        Dim ayuda = New ayuda
+        ayuda.Show()
+    End Sub
+
+    Private Sub frmPrincDescargas_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F1 Then
+            Dim ayuda = New ayuda
+            ayuda.Show()
+        End If
     End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click

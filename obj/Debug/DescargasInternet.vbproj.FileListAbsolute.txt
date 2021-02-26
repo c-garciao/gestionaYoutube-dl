@@ -2,7 +2,6 @@ C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe.c
 C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe
 C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.pdb
 C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.xml
-C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbprojAssemblyReference.cache
 C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.Resources.resources
 C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbproj.GenerateResource.cache
 C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbproj.CoreCompileInputs.cache
@@ -15,3 +14,13 @@ C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.exe.m
 C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\DescargasInternet.application
 C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.exe.manifest
 C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.application
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.ayuda.resources
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\Interop.PDFPreviewHandlerHostLib.dll
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbproj.ResolveComReference.cache
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\7z.exe
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\ayuda.pdf
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\dw.ico
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\save_78348.ico
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\Settings_30027.ico
+C:\Users\Carlos\source\repos\DescargasInternet\bin\Debug\resources\Spinner-1s-200px.gif
+C:\Users\Carlos\source\repos\DescargasInternet\obj\Debug\DescargasInternet.vbprojAssemblyReference.cache

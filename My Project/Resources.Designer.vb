@@ -61,47 +61,152 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a .
+        '''  Busca un recurso adaptado de tipo System.Byte[].
         '''</summary>
-        Public ReadOnly Property a() As String
+        Public ReadOnly Property _7z() As Byte()
             Get
-                Return ResourceManager.GetString("a", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("_7z", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a .
+        '''  Busca un recurso adaptado de tipo System.Byte[].
         '''</summary>
-        Public ReadOnly Property adfa() As String
+        Public ReadOnly Property _7z1() As Byte()
             Get
-                Return ResourceManager.GetString("adfa", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("_7z1", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a .
+        '''  Busca un recurso adaptado de tipo System.Byte[].
         '''</summary>
-        Public ReadOnly Property adfadf() As String
+        Public ReadOnly Property ayuda() As Byte()
             Get
-                Return ResourceManager.GetString("adfadf", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("ayuda", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a asdfadsf.
+        '''  Busca un recurso adaptado de tipo System.Byte[].
         '''</summary>
-        Public ReadOnly Property asdf() As String
+        Public ReadOnly Property ayuda1() As Byte()
             Get
-                Return ResourceManager.GetString("asdf", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("ayuda1", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a adsf.
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         '''</summary>
-        Public ReadOnly Property String1() As String
+        Public ReadOnly Property dw() As System.Drawing.Icon
             Get
-                Return ResourceManager.GetString("String1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("dw", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property dw1() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("dw1", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property dw2() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("dw2", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property save() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("save", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property save_78348() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("save_78348", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property save_783481() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("save_783481", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property settings() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("settings", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property Settings_30027() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Settings_30027", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Public ReadOnly Property Settings_300271() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Settings_300271", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property spinner() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("spinner", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Spinner_1s_200px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Spinner_1s_200px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
     End Module

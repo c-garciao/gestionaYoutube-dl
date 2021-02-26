@@ -38,6 +38,7 @@ Partial Class frmPrincDescargas
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManualDeUsoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtPrgresoDescarga = New System.Windows.Forms.Label()
         CType(Me.matrizDatos01, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grupoBtnOpcs.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -168,20 +169,29 @@ Partial Class frmPrincDescargas
         'ManualDeUsoToolStripMenuItem
         '
         Me.ManualDeUsoToolStripMenuItem.Name = "ManualDeUsoToolStripMenuItem"
-        Me.ManualDeUsoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ManualDeUsoToolStripMenuItem.Text = "Manual de uso"
+        Me.ManualDeUsoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ManualDeUsoToolStripMenuItem.Text = "Manual de uso (F1)"
         '
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
+        '
+        'txtPrgresoDescarga
+        '
+        Me.txtPrgresoDescarga.AutoSize = True
+        Me.txtPrgresoDescarga.Location = New System.Drawing.Point(402, 192)
+        Me.txtPrgresoDescarga.Name = "txtPrgresoDescarga"
+        Me.txtPrgresoDescarga.Size = New System.Drawing.Size(0, 13)
+        Me.txtPrgresoDescarga.TabIndex = 10
         '
         'frmPrincDescargas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 271)
+        Me.Controls.Add(Me.txtPrgresoDescarga)
         Me.Controls.Add(Me.btnCancelarProceso)
         Me.Controls.Add(Me.btnEliminaRegistros)
         Me.Controls.Add(Me.barraProgresoDescarga)
@@ -223,4 +233,5 @@ Partial Class frmPrincDescargas
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManualDeUsoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtPrgresoDescarga As Label
 End Class

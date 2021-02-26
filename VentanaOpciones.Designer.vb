@@ -23,14 +23,17 @@ Partial Class VentanaOpciones
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.chkGenLogs = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.chkActualizaciones = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnDescargaFicheros = New System.Windows.Forms.Button()
         Me.btnAbreSelecFich = New System.Windows.Forms.Button()
         Me.abreLocExes = New System.Windows.Forms.SaveFileDialog()
         Me.btnCambiaRutaDefecto = New System.Windows.Forms.Button()
         Me.abrCambiaRutaDefecto = New System.Windows.Forms.SaveFileDialog()
         Me.lblMuestraCarpeta = New System.Windows.Forms.Label()
+        Me.pctBoxGifCarga = New System.Windows.Forms.PictureBox()
+        Me.bgWkDescargaFicherosEsenciales = New System.ComponentModel.BackgroundWorker()
+        CType(Me.pctBoxGifCarga, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'chkGenLogs
@@ -45,15 +48,15 @@ Partial Class VentanaOpciones
         Me.chkGenLogs.Text = "Generar logs"
         Me.chkGenLogs.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'chkActualizaciones
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(13, 37)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(160, 17)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Actualizaciones atuomáticas"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chkActualizaciones.AutoSize = True
+        Me.chkActualizaciones.Location = New System.Drawing.Point(13, 37)
+        Me.chkActualizaciones.Name = "chkActualizaciones"
+        Me.chkActualizaciones.Size = New System.Drawing.Size(160, 17)
+        Me.chkActualizaciones.TabIndex = 1
+        Me.chkActualizaciones.Text = "Actualizaciones atuomáticas"
+        Me.chkActualizaciones.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -64,14 +67,14 @@ Partial Class VentanaOpciones
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Localizar ejecutables"
         '
-        'Button3
+        'btnDescargaFicheros
         '
-        Me.Button3.Location = New System.Drawing.Point(140, 133)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 34)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Descargar ficheros"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnDescargaFicheros.Location = New System.Drawing.Point(140, 133)
+        Me.btnDescargaFicheros.Name = "btnDescargaFicheros"
+        Me.btnDescargaFicheros.Size = New System.Drawing.Size(75, 34)
+        Me.btnDescargaFicheros.TabIndex = 5
+        Me.btnDescargaFicheros.Text = "Descargar ficheros"
+        Me.btnDescargaFicheros.UseVisualStyleBackColor = True
         '
         'btnAbreSelecFich
         '
@@ -95,23 +98,37 @@ Partial Class VentanaOpciones
         'lblMuestraCarpeta
         '
         Me.lblMuestraCarpeta.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMuestraCarpeta.Location = New System.Drawing.Point(69, 57)
+        Me.lblMuestraCarpeta.Location = New System.Drawing.Point(13, 57)
         Me.lblMuestraCarpeta.Name = "lblMuestraCarpeta"
-        Me.lblMuestraCarpeta.Size = New System.Drawing.Size(100, 23)
+        Me.lblMuestraCarpeta.Size = New System.Drawing.Size(202, 23)
         Me.lblMuestraCarpeta.TabIndex = 8
         Me.lblMuestraCarpeta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'pctBoxGifCarga
+        '
+        Me.pctBoxGifCarga.Enabled = False
+        Me.pctBoxGifCarga.Location = New System.Drawing.Point(153, 86)
+        Me.pctBoxGifCarga.Name = "pctBoxGifCarga"
+        Me.pctBoxGifCarga.Size = New System.Drawing.Size(47, 44)
+        Me.pctBoxGifCarga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctBoxGifCarga.TabIndex = 9
+        Me.pctBoxGifCarga.TabStop = False
+        '
+        'bgWkDescargaFicherosEsenciales
+        '
         '
         'VentanaOpciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(227, 186)
+        Me.Controls.Add(Me.pctBoxGifCarga)
         Me.Controls.Add(Me.lblMuestraCarpeta)
         Me.Controls.Add(Me.btnCambiaRutaDefecto)
         Me.Controls.Add(Me.btnAbreSelecFich)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnDescargaFicheros)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.chkActualizaciones)
         Me.Controls.Add(Me.chkGenLogs)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -119,18 +136,21 @@ Partial Class VentanaOpciones
         Me.Name = "VentanaOpciones"
         Me.Text = "Opciones"
         Me.TopMost = True
+        CType(Me.pctBoxGifCarga, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents chkGenLogs As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents chkActualizaciones As CheckBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnDescargaFicheros As Button
     Friend WithEvents btnAbreSelecFich As Button
     Friend WithEvents abreLocExes As SaveFileDialog
     Friend WithEvents btnCambiaRutaDefecto As Button
     Friend WithEvents abrCambiaRutaDefecto As SaveFileDialog
     Friend WithEvents lblMuestraCarpeta As Label
+    Friend WithEvents pctBoxGifCarga As PictureBox
+    Friend WithEvents bgWkDescargaFicherosEsenciales As System.ComponentModel.BackgroundWorker
 End Class

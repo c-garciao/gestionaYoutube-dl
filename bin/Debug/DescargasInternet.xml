@@ -22,29 +22,79 @@ DescargasInternet
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:DescargasInternet.My.Resources.Resources.a">
+<member name="P:DescargasInternet.My.Resources.Resources._7z">
 <summary>
-  Busca una cadena traducida similar a .
+  Busca un recurso adaptado de tipo System.Byte[].
 </summary>
 </member>
-<member name="P:DescargasInternet.My.Resources.Resources.adfa">
+<member name="P:DescargasInternet.My.Resources.Resources._7z1">
 <summary>
-  Busca una cadena traducida similar a .
+  Busca un recurso adaptado de tipo System.Byte[].
 </summary>
 </member>
-<member name="P:DescargasInternet.My.Resources.Resources.adfadf">
+<member name="P:DescargasInternet.My.Resources.Resources.ayuda">
 <summary>
-  Busca una cadena traducida similar a .
+  Busca un recurso adaptado de tipo System.Byte[].
 </summary>
 </member>
-<member name="P:DescargasInternet.My.Resources.Resources.asdf">
+<member name="P:DescargasInternet.My.Resources.Resources.ayuda1">
 <summary>
-  Busca una cadena traducida similar a asdfadsf.
+  Busca un recurso adaptado de tipo System.Byte[].
 </summary>
 </member>
-<member name="P:DescargasInternet.My.Resources.Resources.String1">
+<member name="P:DescargasInternet.My.Resources.Resources.dw">
 <summary>
-  Busca una cadena traducida similar a adsf.
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.dw1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.dw2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.save">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.save_78348">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.save_783481">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.settings">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.Settings_30027">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.Settings_300271">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.spinner">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DescargasInternet.My.Resources.Resources.Spinner_1s_200px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 </members>
